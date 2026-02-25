@@ -3,7 +3,7 @@ Flask
 gunicorn
 pandas
 scikit-learn
-werkzeu
+werkzeug
 flask
 pandas
 scikit-learn
