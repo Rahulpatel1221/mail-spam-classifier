@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Spam</h2>
+
+{% if mails %}
+    {% for mail in mails %}
+
+    {% for mail in mails %}
+<div class="mail spam">
+    <b>From:</b> {{ mail[0] }} <br>
+    <b>Subject:</b> {{ mail[1] }} <br>
+    <b>Message:</b><br>
+    {{ mail[2] }}
+</div>
+{% endfor %}
+
+
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>No spam emails</p>
+{% endif %}
+
+{% endblock %}

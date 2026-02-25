@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Email Spam Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<body>
+
+<div class="auth-page">
+    <div class="auth-box">
+        <h2>Email Spam Classifier</h2>
+        <p>Register</p>
+
+        {% if message %}
+        <p style="color:red">{{ message }}</p>
+        {% endif %}
+
+        <form method="post">
+            <input name="name" placeholder="Name" value="{{form_data.name | default('')}}"required>
+            <input name="surname" placeholder="Surname" value="{{form_data.surname | default}}" required>
+            <input name="email" placeholder="Email" value="{{form_data.email | default}}" required>
+            <input name="phone" placeholder="Phone Number" value="{{form_data.phone | default}}" required>
+            <input name="password" type="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <br>
+        <a href="/login">Back to Login</a>
+    </div>
+</div>
+
+</body>
+
+
+</body>
+</html>
