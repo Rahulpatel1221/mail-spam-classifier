@@ -1,0 +1,12 @@
+
+Flask
+gunicorn
+pandas
+scikit-learn
+werkzeug
+=======
+flask
+pandas
+scikit-learn
+gunicorn
+
