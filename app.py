@@ -12,7 +12,8 @@ import random
 app = Flask(__name__)
 app.secret_key = "secret"
 
-init_db()
+if __name__ == "__main__":
+    init_db()
 
 # ---------------- PASSWORD & EMAIL VALIDATION ----------------
 def is_valid_password(password):
